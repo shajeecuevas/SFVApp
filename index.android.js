@@ -22,6 +22,38 @@ class SFVApp extends Component {
             {
                 name: "Necalli",
                 image: require('./images/Necalli.jpg'),
+            },
+            {
+                name: "Bison (Dictator)",
+                image: require('./images/Bison.jpg'),
+            },
+            {
+                name: "Dhalsim",
+                image: require('./images/Dhalsim.jpg'),
+            },
+            {
+                name: "Zangief",
+                image: require('./images/Zangief.jpg'),
+            },
+            {
+                name: "Birdie",
+                image: require('./images/Birdie.jpg'),
+            },
+            {
+                name: "R.Mika",
+                image: require('./images/RMika.jpg'),
+            },
+            {
+                name: "Vega (Claw)",
+                image: require('./images/Vega.jpg'),
+            },
+            {
+                name: "Karin",
+                image: require('./images/Karin.jpg'),
+            },
+            {
+                name: "Charlie",
+                image: require('./images/Charlie.jpg'),
             }
         ];
 
@@ -47,7 +79,7 @@ class SFVApp extends Component {
                         <Text style={styles.description}> {fighter.description} </Text>
                     </View>
                 )
-                style = styles.large;
+                style = styles.medium;
             } else {
                 style = styles.medium;
             }
@@ -76,6 +108,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent:  'center',
     alignItems: 'center',
+    flexWrap: 'wrap'
   },
   medium: {
     width: 80,
